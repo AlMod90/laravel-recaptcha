@@ -1,0 +1,30 @@
+{
+  "name": "almod90/laravel-recaptcha",
+  "description": "Recaptcha package for Laravel",
+  "authors": [
+    {
+      "name": "Alex Modin",
+      "email": "almod90@gmail.com"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "^6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "almod90\\Recaptcha\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "laravel": {
+      "providers": [
+        "almod90\\Recaptcha\\RecaptchaServiceProvider"
+      ],
+      "aliases": {
+        "Recaptcha": "almod90\\Recaptcha\\Facades\\Recaptcha"
+      }
+    }
+  }
+}
